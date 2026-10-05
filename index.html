@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yearly Tax Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="card">
+        <h1>Income Tax Calculator</h1>
+
+        <form id="tax-form">
+          <label for="salary">Yearly salary</label>
+          <input
+            id="salary"
+            name="salary"
+            type="number"
+            min="0"
+            step="0.01"
+            placeholder="e.g. 85000"
+            required
+          />
+
+          <button type="submit">Calculate</button>
+        </form>
+
+        <table class="result-table" aria-label="Tax calculation results">
+          <tbody>
+            <tr>
+              <th scope="row">Current</th>
+              <td id="tax-standard">$0.00</td>
+            </tr>
+            <tr>
+              <th scope="row">Greens</th>
+              <td id="tax-greens">$0.00</td>
+            </tr>
+            <tr>
+              <th scope="row">TPM</th>
+              <td id="tax-tpm">$0.00</td>
+            </tr>
+            <tr>
+              <th scope="row">Alliance</th>
+              <td id="tax-alliance">$0.00</td>
+            </tr>
+            <tr>
+              <th scope="row">TOP</th>
+              <td id="tax-top">$0.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
